@@ -7,7 +7,7 @@ https://adventofcode.com/2021/day/1
 
 import pytest
 
-from day_02 import main
+from advent_code.day_02 import main
 
 @pytest.mark.parametrize('test_input, expected', [
     (['forward 5', 'down 5', 'forward 8', 'up 3', 'down 8', 'forward 2'], 150),

@@ -8,7 +8,7 @@ https://adventofcode.com/2021/day/1
 import os
 from pathlib import Path
 
-from common import functions
+from ..common import functions
 
 
 def sonar_sweep(rows):

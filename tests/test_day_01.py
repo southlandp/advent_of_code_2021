@@ -7,7 +7,7 @@ https://adventofcode.com/2021/day/1
 
 import pytest
 
-from day_01 import main
+from advent_code.day_01 import main
 
 @pytest.mark.parametrize('test_input, expected', [
     ([199, 200, 208, 210, 200, 207, 240, 269, 260, 263], 7),

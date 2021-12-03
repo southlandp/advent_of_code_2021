@@ -9,7 +9,7 @@ import os
 from pathlib import Path
 import re
 
-from common import functions
+from ..common import functions
 
 
 class Submarine:
