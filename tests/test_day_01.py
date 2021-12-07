@@ -7,7 +7,8 @@ https://adventofcode.com/2021/day/1
 
 import pytest
 
-from advent_code.day_01 import main
+from advent_code import day_01 as main
+
 
 @pytest.mark.parametrize('test_input, expected', [
     ([199, 200, 208, 210, 200, 207, 240, 269, 260, 263], 7),
@@ -17,7 +18,7 @@ from advent_code.day_01 import main
     (['9', '200', '208', '210', '200', '200', '207', '240', '269', '260', '263'], 7),
     (['9', '200', '208', '210', '200', '190', '240', '269', '260', '263'], 6)
 ])
-def test_eval(test_input, expected):
+def test_part1(test_input, expected):
     assert main.sonar_sweep(test_input) == expected
 
 
@@ -29,5 +30,5 @@ def test_eval(test_input, expected):
     (['9', '200', '208', '210', '200', '200', '207', '240', '269', '260', '263'], 5),
     (['9', '200', '208', '210', '200', '190', '240', '269', '260', '263'], 5)
 ])
-def test_eval(test_input, expected):
+def test_part2(test_input, expected):
     assert main.sonar_sweep_moving_average(test_input) == expected

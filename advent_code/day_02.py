@@ -9,7 +9,9 @@ import os
 from pathlib import Path
 import re
 
-from ..common import functions
+from advent_code.common import functions
+
+DAY = '02'
 
 
 class Submarine:
@@ -88,7 +90,7 @@ class SubmarineV2:
 
 
 if __name__ == '__main__':
-    rows = functions.read_file(os.path.join(Path(__file__).resolve().parent, 'input.txt'))
+    rows = functions.read_file()
 
     s = Submarine()
     s.plot_course(rows)

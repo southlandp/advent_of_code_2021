@@ -8,7 +8,9 @@ https://adventofcode.com/2021/day/1
 import os
 from pathlib import Path
 
-from ..common import functions
+from advent_code.common import functions
+
+DAY = '01'
 
 
 def sonar_sweep(rows):
@@ -37,7 +39,7 @@ def sonar_sweep(rows):
 
 def sonar_sweep_moving_average(rows, window=3):
     """
-    counts the number of entries that have a higher value than the previous
+    counts the number of entries that have a higheint(r value than the previous
 
     :param rows: list of depth values
     :type rows: list
@@ -67,6 +69,6 @@ def sonar_sweep_moving_average(rows, window=3):
 
 
 if __name__ == '__main__':
-    rows = functions.read_file(os.path.join(Path(__file__).resolve().parent, 'input.txt'))
+    rows = functions.read_file()
     print(sonar_sweep(rows))
     print(sonar_sweep_moving_average(rows))
